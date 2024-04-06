@@ -10,7 +10,7 @@ public class NameDays {
 
     public void ReturnArray()
     {
-        Path input = Path.of(System.getProperty("user.home"), "IdeaProjects\\FilesAGP\\src\\main\\resources\\svatky.txt");
+        Path input = Path.of(System.getProperty("user.home"), "IdeaProjects\\AGPWorkWithFiles\\src\\main\\resources\\svatky.txt");
         try
         {
             List<String> lines = Files.readAllLines(input);
@@ -57,7 +57,7 @@ public class NameDays {
         {
             try
             {
-                if(days[i][j].contains(nameInput))
+                if(days[i][j].contains(nameInput) && !(days[i][j].substring(nameInput.length()).equals("a")))
                 {
                     dateOfDay = j+1 + ". " + Integer.parseInt(String.valueOf(i+1)) + ".";
                 }

@@ -10,7 +10,7 @@ public class Poem {
 
     public void ReadFile()
     {
-        Path inPath = Path.of(System.getProperty("user.home"),"IdeaProjects\\FilesAGP\\src\\main\\resources\\" + inPathInput);
+        Path inPath = Path.of(System.getProperty("user.home"),"IdeaProjects\\AGPWorkWIthFiles\\src\\main\\resources\\" + inPathInput);
         Path outPath = Path.of(outPathInput);
         try{
             List<String> lines = Files.readAllLines(inPath);
